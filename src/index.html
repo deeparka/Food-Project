@@ -9,8 +9,8 @@
     </head>
     <body class="text-gray-600 font-nunito">
         <div class="grid md:grid-cols-3">
-            <div class="md:col-span-1">
-                <nav>
+            <div class="md:col-span-1 md:flex md:justify-end">
+                <nav class="text-right">
                     <div>
                         <h1
                             class="font-bold uppercase p-4 border-b border-gray-100"
@@ -18,20 +18,73 @@
                             <a href="/">Food Ninja</a>
                         </h1>
                     </div>
-                    <ul>
-                        <li class="text-gray-700 font-bold">
-                            <a href="#">
+                    <ul class="text-sm mt-6">
+                        <li class="text-gray-700 font-bold py-1">
+                            <a
+                                href="#"
+                                class="px-4 flex justify-end border-r-4 border-primary"
+                            >
                                 <span>Home</span>
+                                <svg
+                                    class="w-5 ml-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                                    />
+                                </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="py-1">
+                            <a
+                                href="#"
+                                class="px-4 flex justify-end border-r-4 border-white"
+                            >
                                 <span>About</span>
+                                <svg
+                                    class="w-5 ml-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    x="0px"
+                                    y="0px"
+                                    width="30"
+                                    height="30"
+                                    viewBox="0 0 30 30"
+                                    style="fill: #000000"
+                                >
+                                    <path
+                                        d="M 15 3 C 7.82 3 2 7.925 2 14 C 2 16.676142 3.1322222 19.126093 5.0097656 21.033203 C 5.0476793 21.127522 6.0110131 23.606674 3.1582031 26.134766 A 0.5 0.5 0 0 0 3 26.5 A 0.5 0.5 0 0 0 3.5 27 A 0.5 0.5 0 0 0 3.6074219 26.988281 C 6.4832831 26.817905 8.9434573 25.390739 10.445312 24.291016 C 11.864706 24.741137 13.394827 25 15 25 C 22.18 25 28 20.075 28 14 C 28 7.925 22.18 3 15 3 z M 15 7.5 C 15.828 7.5 16.5 8.172 16.5 9 C 16.5 9.828 15.828 10.5 15 10.5 C 14.172 10.5 13.5 9.828 13.5 9 C 13.5 8.172 14.172 7.5 15 7.5 z M 14 13 L 16 13 L 16 20 L 14 20 L 14 13 z"
+                                    ></path>
+                                </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="py-1">
+                            <a
+                                href="#"
+                                class="px-4 flex justify-end border-r-4 border-white"
+                            >
                                 <span>Contact</span>
+                                <svg
+                                    class="w-5 ml-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                    />
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -42,12 +95,12 @@
                 <div class="flex justify-center md:justify-end">
                     <a
                         href="#"
-                        class="btn text-primary border-primary md:border-2"
+                        class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
                         >Log in</a
                     >
                     <a
                         href="#"
-                        class="btn text-primary ml-2 border-primary md:border-2"
+                        class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white"
                         >Sign up</a
                     >
                 </div>
@@ -66,7 +119,7 @@
 
                     <div class="mt-8 grid lg:grid-cols-3 gap-10">
                         <!-- cards go here -->
-                        <div class="card">
+                        <div class="card hover:shadow-lg">
                             <img
                                 src="images/chic_biryani.jpeg"
                                 alt=""
@@ -79,11 +132,26 @@
                                 >
                             </div>
                             <div class="badge">
+                                <svg
+                                    class="w-5 inline-block"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
                                 <span>50 mins</span>
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hover:shadow-lg">
                             <img
                                 src="images/hakka_noodles.jpeg"
                                 alt=""
@@ -96,11 +164,26 @@
                                 >
                             </div>
                             <div class="badge">
+                                <svg
+                                    class="w-5 inline-block"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
                                 <span>20 mins</span>
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hover:shadow-lg">
                             <img
                                 src="images/beef_steak.jpeg"
                                 alt=""
@@ -113,6 +196,21 @@
                                 >
                             </div>
                             <div class="badge">
+                                <svg
+                                    class="w-5 inline-block"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
                                 <span>45 mins</span>
                             </div>
                         </div>
@@ -128,7 +226,9 @@
                 </div>
 
                 <div class="mt-12 flex justify-center">
-                    <div class="btn bg-secondary-100 text-secondary-200">
+                    <div
+                        class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner"
+                    >
                         Load more
                     </div>
                 </div>
